@@ -13,6 +13,14 @@ terraform {
     }
   }
   required_version = ">= 1.1.0"
+
+  cloud {
+    organization = "georgi-berchev"
+
+    workspaces {
+      name = "gh-actions"
+    }
+  }
 }
 
 resource "random_pet" "pet1" {
