@@ -16,7 +16,7 @@ terraform {
 }
 
 resource "random_pet" "pet1" {
- length    = "88"
+ length    = "8"
  separator = "-"
 }
 
